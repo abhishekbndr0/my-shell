@@ -1,0 +1,9 @@
+# build artifacts
+shell
+*.o
+lex.yy.cc
+y.tab.cc
+y.tab.hh
+
+# macOS
+.DS_Store

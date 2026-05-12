@@ -1,0 +1,20 @@
+# myshell: a Unix shell implemented in C++ using Flex (lexer) and Bison (parser)
+
+## compatibility:
+- runs on Linux and macOS
+- subshell ($()) and process substitution (<()) are Linux-only because of a dependency on /proc/self/exe
+
+## features:
+- command parsing and execution via Flex/Bison
+- pipes and I/O redirection (stdin, stdout, stderr)
+- built-in commands: cd, printenv, setenv, unsetenv, source
+- signal handling (ctrl+c, zombie process elimination)
+- quote and escape character handling
+- subshell execution
+- environment variable expansion
+- tilde expansion
+- wildcard globbing in the current directory
+- interactive line editor with command history
+
+## known limitations:
+- wildcard globbing in subdirectories is not yet supported
